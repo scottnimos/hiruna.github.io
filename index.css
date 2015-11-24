@@ -1,0 +1,112 @@
+<!--code by Hiruna Wijesinghe-->
+
+.title{
+		
+}
+.title:hover{
+	color:#737373;
+	cursor:pointer;
+}
+.title:active{
+	color:#4d4d4d;
+	cursor:pointer;
+}
+.content{
+	background-color:#262626;
+	width:500px;
+	
+	height: 60px;
+	padding-left:15px;
+	padding-right:150px;
+	padding-top:10px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	text-align:left;
+	border-radius:10px;
+	line-height:15px;
+}
+.headBox{
+	background-color:#333333;
+	width:auto;
+	height: 60px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:left;
+	border-radius:10px;
+	line-height:15px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	 user-select: none;
+}
+.footBox{
+	background-color:#333333;
+	
+	bottom:10px;
+	width:100%;
+	height: 25px;
+	
+	margin-top:100%;
+	
+	
+	text-align:center;
+	border-radius:10px;
+	line-height:25px;
+	
+	
+}
+.navBox{
+	background-color:#333333;
+	height:97%;
+	width:130px;
+	padding-right:10px;
+	padding-bottom:3px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:10px;
+	border-radius:10px;
+	left:3px;
+	position:absolute;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	 user-select: none;
+}			
+.navButton{
+	background-color:#262626;
+	width:120px;
+	height:45px;
+	position:absolute;
+	left:9px;
+	text-align:center;
+	line-height:45px;
+	padding:1px;
+	
+	
+}
+.navButton:hover{
+	background-color:#737373;
+	cursor:pointer;
+}
+.navButton:active{
+	background-color:#4d4d4d;
+	cursor:pointer;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body{
+	
+	background-color:#0d0d0d;
+	font-family: Ubuntu, sans-serif;
+	color: white;
+}
