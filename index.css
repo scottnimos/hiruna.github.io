@@ -1,96 +1,118 @@
-<!--code by Hiruna Wijesinghe-->
+/* code by Hiruna Wijesinghe
+in css comment are not <!-- --> :)
 
-.title{
-		
+--originally there is some type of fixed layout,
+i have redone it using floats. Explore the different ways of making
+layouts there are several
+*/
+/*css reset -fix browser inconsitent stuff */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
 }
-.title:hover{
-	color:#737373;
-	cursor:pointer;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-.title:active{
-	color:#4d4d4d;
-	cursor:pointer;
+body {
+	line-height: 1;
 }
-.content{
-	background-color:#262626;
-	width:500px;
-	
-	height: 60px;
-	padding-left:15px;
-	padding-right:150px;
-	padding-top:10px;
-	margin-top:5px;
-	margin-left:5px;
-	margin-bottom:10px;
-	padding-bottom:10px;
-	text-align:left;
-	border-radius:10px;
-	line-height:15px;
+ol, ul {
+	list-style: none;
+}
+/* css reset END */
+
+
+body{
+	background-color:#0d0d0d;
+	font-family: Ubuntu, sans-serif;
+	color: white;
+	padding: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 .headBox{
+	font-size: 2em;
+	font-weight: bold;
+	cursor: default;
+	float: left;
 	background-color:#333333;
-	width:auto;
-	height: 60px;
-	padding-left:15px;
-	padding-right:15px;
-	padding-top:10px;
-	padding-bottom:10px;
-	text-align:left;
-	border-radius:10px;
-	line-height:15px;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	 user-select: none;
+	width:96%;
+	padding:2%;
+	border-radius:10px;/* this wont work on it own for cross browser so added for compatabillity */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 }
+.container {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.content{
+	float: left;
+	background-color:#262626;
+	width:600px;
+	padding:10px;
+	margin-top:10px;
+	margin-left:10px;
+	text-align:left;
+	border-radius:10px; /* this wont work on it own for cross browser so added for compatabillity */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
 .footBox{
+	clear: both;
+	float: left;
+	margin-top: 10px;
 	background-color:#333333;
-	
-	bottom:10px;
 	width:100%;
-	height: 25px;
-	
-	margin-top:100%;
-	
-	
+	height: 30px;
+	padding-top: 15px;
 	text-align:center;
 	border-radius:10px;
-	line-height:25px;
-	
-	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 }
 .navBox{
+	float: left;
 	background-color:#333333;
-	height:97%;
-	width:130px;
-	padding-right:10px;
-	padding-bottom:3px;
-	margin-top:5px;
-	margin-left:5px;
-	margin-bottom:10px;
+	width:140px;
+	height: 500px;
+	margin-top: 10px;
+	padding-bottom: 10px;
 	border-radius:10px;
-	left:3px;
-	position:absolute;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	 user-select: none;
-}			
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
 .navButton{
 	background-color:#262626;
 	width:120px;
-	height:45px;
-	position:absolute;
-	left:9px;
+	height:30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
 	text-align:center;
-	line-height:45px;
-	padding:1px;
-	
-	
+	padding-top: 15px;
 }
 .navButton:hover{
 	background-color:#737373;
@@ -99,14 +121,4 @@
 .navButton:active{
 	background-color:#4d4d4d;
 	cursor:pointer;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-body{
-	
-	background-color:#0d0d0d;
-	font-family: Ubuntu, sans-serif;
-	color: white;
 }
